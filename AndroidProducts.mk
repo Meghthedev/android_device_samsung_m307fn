@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2020 The LineageOS Project
+# Copyright (C) 2020-2022 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_m307fn.mk
+    $(LOCAL_DIR)/dot_m307fn.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_m307fn-eng \
-    aosp_m307fn-user \
-    aosp_m307fn-userdebug
+    dot_m307fn-eng \
+    dot_m307fn-user \
+    dot_m307fn-userdebug
