@@ -11,8 +11,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 ## Inherit from m307fn device
 $(call inherit-product, device/samsung/m307fn/device.mk)
 
-## Inherit some common dotOS stuff
-$(call inherit-product, vendor/dot/config/common.mk)
+# Inherit some common Evolution X stuff
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
 ## Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
@@ -21,7 +21,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 TARGET_SUPPORTS_QUICK_TAP := true
 
 ## Device identifier, this must come after all inclusions
-PRODUCT_NAME := dot_m307fn
+PRODUCT_NAME := evolution_m307fn
 PRODUCT_DEVICE := m307fn
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-M307FN

@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/dot_m307fn.mk
+    $(LOCAL_DIR)/evolution_m307fn.mk
 
 COMMON_LUNCH_CHOICES := \
-    dot_m307fn-eng \
-    dot_m307fn-user \
-    dot_m307fn-userdebug
+    evolution_m307fn-eng \
+    evolution_m307fn-user \
+    evolution_m307fn-userdebug
