@@ -4,24 +4,24 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-## Inherit from generic products, most specific first
+# Inherit from generic products, most specific first
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-## Inherit from m307fn device
+# Inherit from m307fn device
 $(call inherit-product, device/samsung/m307fn/device.mk)
 
-## Inherit some common dotOS stuff
-$(call inherit-product, vendor/dot/config/common.mk)
+# Inherit some common dotOS stuff
+$(call inherit-product, vendor/spark/config/common.mk)
 
-## Enable updating of APEXes
+# Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
-## Quick Tap
+# Quick Tap
 TARGET_SUPPORTS_QUICK_TAP := true
 
-## Device identifier, this must come after all inclusions
-PRODUCT_NAME := dot_m307fn
+# Device identifier, this must come after all inclusions
+PRODUCT_NAME := spark_m307fn
 PRODUCT_DEVICE := m307fn
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-M307FN
